@@ -33,5 +33,5 @@ def check_if_levels_differ_correctly(levels: list[int]):
 
 
 if __name__ == "__main__":
-    report_of_levels = read_report(r"C:\Users\robert.piatek\OneDrive - Accenture\Desktop\AOC\AoC2024\day2\data.txt")
+    report_of_levels = read_report(r"data.txt")
     print(report_of_levels)
