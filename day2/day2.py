@@ -38,7 +38,8 @@ def check_if_levels_differ_correctly(levels: list[int]) -> bool:
     :return: True if levels differ correctly within report, False otherwise.
     """
     for i in range(1, len(levels)):
-        if abs(levels[i] - levels[i-1]) > 3 or abs(levels[i] - levels[i-1]) < 1:
+        difference = abs(levels[i] - levels[i - 1])
+        if difference > 3 or difference < 1:
             return False
     return True
 
@@ -50,7 +51,7 @@ def calculate_safe_reports(report_of_levels: list[list[int]]) -> int:
     :return: Number of unsafe reports.
     """
     safe_reports = 0
-    for i, single_report in enumerate(report_of_levels):
+    for _, single_report in enumerate(report_of_levels):
         if check_if_levels_increasing_decreasing(single_report) and check_if_levels_differ_correctly(single_report):
             safe_reports += 1
     return safe_reports
