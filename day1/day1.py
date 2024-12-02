@@ -53,6 +53,21 @@ if __name__ == "__main__":
         print(f"{number1} - {l2[i]} = list_of_distances: {list_of_distances[i]}, manual_check = {abs(number1 - l2[i])}")
     print(f"Sum of distances for the first five elements: {sum(list_of_distances)}")
 
+    """OUTPUT
+    Sum of distances for the whole lists: 1660292
+
+    Proof of concept for the test list from task description
+    l1: [1, 2, 3, 3, 3, 4]
+    l2: [3, 3, 3, 4, 5, 9]
+    1 - 3 = list_of_distances: 2, manual_check = 2
+    2 - 3 = list_of_distances: 1, manual_check = 1
+    3 - 3 = list_of_distances: 0, manual_check = 0
+    3 - 4 = list_of_distances: 1, manual_check = 1
+    3 - 5 = list_of_distances: 2, manual_check = 2
+    4 - 9 = list_of_distances: 5, manual_check = 5
+    Sum of distances for the first five elements: 11
+    """
+
     # print("Proof of concept for the first five elements")
     # print(f"First five elements of l1: {l1[:5]}")
     # print(f"First five elements of l2: {l2[:5]}")
