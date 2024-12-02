@@ -3,23 +3,7 @@ Calculate a total similarity score by adding up each number in the left list aft
 that number appears in the right list.
 """
 
-
-def read_lists(p) -> (list[int], list[int]):
-    """Read numbers from file in form of two lists, each sorted ascending.
-
-    :param p: Path to file.
-    :return: Two lists of ints sorted ascending.
-    """
-    l1 = []
-    l2 = []
-    with open(p, "r") as f:
-        for line in f:
-            numbers_in_line = [int(n) for n in line.split()]
-            l1.append(numbers_in_line[0])
-            l2.append(numbers_in_line[1])
-    l1.sort()
-    l2.sort()
-    return l1, l2
+import day1
 
 
 def calc_similarity_score_between_lists(l1: list[int], l2: list[int]) -> int:
@@ -36,12 +20,12 @@ def calc_similarity_score_between_lists(l1: list[int], l2: list[int]) -> int:
 
 
 if __name__ == "__main__":
-    l1, l2 = read_lists(r"data.txt")
+    l1, l2 = day1.read_lists(r"data.txt")
     similarity_score = calc_similarity_score_between_lists(l1, l2)
     print(f"Similarity scores for the whole lists: {similarity_score}\n")
 
     print("Proof of concept for the test list from task description")
-    l1, l2 = read_lists(r"test_data.txt")
+    l1, l2 = day1.read_lists(r"test_data.txt")
     similarity_score = calc_similarity_score_between_lists(l1, l2)
     print(f"l1: {l1}")
     print(f"l2: {l2}")
