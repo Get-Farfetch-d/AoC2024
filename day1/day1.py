@@ -67,10 +67,3 @@ if __name__ == "__main__":
     4 - 9 = list_of_distances: 5, manual_check = 5
     Sum of distances for the test list: 11
     """
-
-    # print("Proof of concept for the first five elements")
-    # print(f"First five elements of l1: {l1[:5]}")
-    # print(f"First five elements of l2: {l2[:5]}")
-    # for i in range(5):
-    #     print(f"{l1[i]} - {l2[i]} = list_of_distances: {list_of_distances[i]}, manual_check = {abs(l1[i] - l2[i])}")
-    # print(f"Sum of distances for the first five elements: {sum(list_of_distances[:5])}")
