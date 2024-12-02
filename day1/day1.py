@@ -44,7 +44,7 @@ if __name__ == "__main__":
     print(f"Sum of distances for the whole lists: {sum_of_distances}\n")
 
     print("Proof of concept for the test list from task description")
-    l1, l2 = read_lists(r"Path_here_test_data.txt")
+    l1, l2 = read_lists(r"test_data.txt")
     list_of_distances = calc_distance_between_lists(l1, l2)
     sum_of_distances = sum(list_of_distances)
     print(f"l1: {l1}")
