@@ -65,7 +65,7 @@ if __name__ == "__main__":
     3 - 4 = list_of_distances: 1, manual_check = 1
     3 - 5 = list_of_distances: 2, manual_check = 2
     4 - 9 = list_of_distances: 5, manual_check = 5
-    Sum of distances for the first five elements: 11
+    Sum of distances for the test list: 11
     """
 
     # print("Proof of concept for the first five elements")
