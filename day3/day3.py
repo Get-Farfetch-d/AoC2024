@@ -16,7 +16,7 @@ def task1(commands):
                 group = group.replace(")","")
                 factors = group.split(",")
                 result += int(factors[0]) * int(factors[1])
-    print("Task 2: Result", result)
+    print("Task 1: Result", result)
 
 
 def task2(commands):
